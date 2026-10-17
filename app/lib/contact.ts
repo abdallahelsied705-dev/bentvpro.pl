@@ -1,5 +1,5 @@
 export const WHATSAPP_NUMBER = "212707711512";
-export const SUPPORT_EMAIL = "goldengateiptv@gmail.com";
+export const SUPPORT_EMAIL = "supportteamiptv@gmail.com";
 
 export function whatsappLink(text: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;

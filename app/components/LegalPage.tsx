@@ -59,8 +59,8 @@ export default function LegalPage({ badge, title, subtitle, lastUpdated, section
         <div className="pt-6 border-t border-white/5">
           <p className="text-slate-400 text-sm">
             Pytania dotyczące tej polityki? Skontaktuj się z nami:{" "}
-            <a href="mailto:goldengateiptv@gmail.com" className="text-brand-400 hover:text-brand-300 transition-colors">
-              goldengateiptv@gmail.com
+            <a href="mailto:supportteamiptv@gmail.com" className="text-brand-400 hover:text-brand-300 transition-colors">
+              supportteamiptv@gmail.com
             </a>
           </p>
         </div>

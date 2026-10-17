@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
         },
         {
           heading: "8. Kontakt",
-          body: "W przypadku pytań dotyczących prywatności lub chęci skorzystania ze swoich praw, skontaktuj się z nami pod adresem goldengateiptv@gmail.com. Odpowiemy w ciągu 30 dni.",
+          body: "W przypadku pytań dotyczących prywatności lub chęci skorzystania ze swoich praw, skontaktuj się z nami pod adresem supportteamiptv@gmail.com. Odpowiemy w ciągu 30 dni.",
         },
       ]}
     />

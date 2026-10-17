@@ -35,9 +35,9 @@ const channels = [
     title: "Email",
     description: "W sprawie pytań dotyczących płatności, wniosków o zwrot lub szczegółowych problemów technicznych.",
     action: "Wyślij email",
-    href: "mailto:goldengateiptv@gmail.com",
+    href: "mailto:supportteamiptv@gmail.com",
     highlight: false,
-    detail: "goldengateiptv@gmail.com",
+    detail: "supportteamiptv@gmail.com",
   },
 ];
 

@@ -35,7 +35,7 @@ export default function RefundPolicy() {
         {
           heading: "Jak złożyć wniosek o zwrot",
           body: [
-            "Skontaktuj się z nami pod adresem goldengateiptv@gmail.com lub przez WhatsApp.",
+            "Skontaktuj się z nami pod adresem supportteamiptv@gmail.com lub przez WhatsApp.",
             "Podaj dane swojego konta i opis problemu.",
             "Nasz zespół rozpatrzy Twój wniosek w ciągu 24 godzin.",
             "Zatwierdzone zwroty są przetwarzane w ciągu 5–10 dni roboczych na Twoją pierwotną metodę płatności.",
@@ -47,7 +47,7 @@ export default function RefundPolicy() {
         },
         {
           heading: "Kontakt",
-          body: "W sprawie wniosków o zwrot lub pytań dotyczących rozliczeń skontaktuj się z naszym zespołem wsparcia pod adresem goldengateiptv@gmail.com lub przez WhatsApp: +212 707 711 512. Odpowiadamy w ciągu 24 godzin.",
+          body: "W sprawie wniosków o zwrot lub pytań dotyczących rozliczeń skontaktuj się z naszym zespołem wsparcia pod adresem supportteamiptv@gmail.com lub przez WhatsApp: +212 707 711 512. Odpowiadamy w ciągu 24 godzin.",
         },
       ]}
     />
