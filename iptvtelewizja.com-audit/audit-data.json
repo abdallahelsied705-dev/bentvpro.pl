@@ -1,0 +1,226 @@
+{
+  "summary": {
+    "health_score": 80,
+    "business_type": "Online subscription service (IPTV), Polish audience",
+    "top_findings": [
+      "Content fixes not deployed (live score 76)",
+      "No business identity or named author",
+      "Domain not in Common Crawl: almost no backlinks",
+      "Apex redirect still 307",
+      "18 of 27 titles over 60 characters"
+    ],
+    "quick_wins": [
+      "Deploy; apex 308; Search Console + sitemap",
+      "Shorten 18 titles",
+      "Render all /setup guides in HTML",
+      "Link the 24-month plan",
+      "Expand tanie-iptv-polska"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 84,
+      "what_works": [
+        "28/28 URLs 200 with self canonicals",
+        "AI crawlers allowed and not challenged",
+        "Server-rendered (2,668 words without JS)",
+        "Security headers",
+        "Real 404 and 308 slug redirect"
+      ],
+      "findings": [
+        {
+          "title": "Apex redirect temporary",
+          "severity": "High",
+          "description": "https://iptvtelewizja.com/ returns 307 to www.",
+          "recommendation": "Set 308 in Vercel Domains."
+        },
+        {
+          "title": "Second www IP unreachable from audit network",
+          "severity": "Medium",
+          "description": "64.29.17.1 refused connections; ~20 s fallback.",
+          "recommendation": "Verify from several regions."
+        },
+        {
+          "title": "No Search Console/Bing/IndexNow",
+          "severity": "Medium",
+          "description": "No verification detected.",
+          "recommendation": "Verify and submit the sitemap."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 74,
+      "what_works": [
+        "All posts 534-1,060 body words",
+        "Direct-answer blocks, tables, FAQs",
+        "No unverifiable claims",
+        "Quality scorer 90-91"
+      ],
+      "findings": [
+        {
+          "title": "No business identity",
+          "severity": "High",
+          "description": "No company name, address, NIP, branded email or named author.",
+          "recommendation": "Add real details."
+        },
+        {
+          "title": "tanie-iptv-polska shortest post",
+          "severity": "Medium",
+          "description": "534 body words on a competitive query.",
+          "recommendation": "Expand to 1,000+ words."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 76,
+      "what_works": [
+        "One H1 per page",
+        "Keyword-led homepage",
+        "Keyword anchor links from posts"
+      ],
+      "findings": [
+        {
+          "title": "Long titles",
+          "severity": "Medium",
+          "description": "18 of 27 titles over 60 characters.",
+          "recommendation": "Shorten."
+        },
+        {
+          "title": "Descriptions out of range",
+          "severity": "Medium",
+          "description": "11 outside 70-160 characters.",
+          "recommendation": "Rewrite."
+        },
+        {
+          "title": "/setup guides hidden",
+          "severity": "Medium",
+          "description": "1 of 6 guides in HTML.",
+          "recommendation": "Render all guides."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 85,
+      "what_works": [
+        "0 JSON-LD errors",
+        "Connected @graph on home",
+        "BlogPosting with dates"
+      ],
+      "findings": [
+        {
+          "title": "No sameAs",
+          "severity": "Medium",
+          "description": "Organization lacks profile links.",
+          "recommendation": "Add when profiles exist."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 95,
+      "what_works": [
+        "Mobile perf 97-99, desktop 100",
+        "LCP 1.8-2.1 s mobile",
+        "CLS 0",
+        "TTFB ~50 ms"
+      ],
+      "findings": [
+        {
+          "title": "No field data",
+          "severity": "Info",
+          "description": "CrUX unavailable.",
+          "recommendation": "Add PSI API key; revisit with traffic."
+        },
+        {
+          "title": "Unsized blog images",
+          "severity": "Low",
+          "description": "20 images without width/height.",
+          "recommendation": "Use next/image."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 75,
+      "what_works": [
+        "All agentic checks pass",
+        "llms.txt passes Lighthouse",
+        "Citable passages in HTML"
+      ],
+      "findings": [
+        {
+          "title": "No off-site presence",
+          "severity": "High",
+          "description": "No YouTube/Reddit/Wikipedia/LinkedIn; not in Common Crawl.",
+          "recommendation": "Build brand presence."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 75,
+      "what_works": [
+        "0 missing alt",
+        "1200x630 OG PNG"
+      ],
+      "findings": [
+        {
+          "title": "No modern formats",
+          "severity": "Medium",
+          "description": "JPEG via plain img.",
+          "recommendation": "WebP/AVIF via next/image."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Deploy content fixes",
+          "Apex 308",
+          "Search Console + Bing + reindex"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "E-E-A-T details",
+          "/setup guides in HTML",
+          "Titles and descriptions",
+          "Accessibility fixes"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Expand/merge thin posts",
+          "Internal links",
+          "Backlinks from Polish expat sites",
+          "YouTube tutorials"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Re-audit with GSC data",
+          "Refresh facts every 2-3 months",
+          "Connect Semrush/PSI key"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}
