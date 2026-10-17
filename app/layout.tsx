@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import { OG_IMAGE, SITE_URL } from "./lib/site";
 import "./globals.css";
@@ -10,6 +10,18 @@ const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin", "latin-ext"],
   display: "swap",
 });
+
+// Distinct display face for headings — gives bentvpro.pl its own voice.
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-display",
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#0b0709",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -64,9 +76,10 @@ export default function RootLayout({
   return (
     <html
       lang="pl"
-      className={`${jakarta.variable} h-full antialiased dark`}
+      className={`${jakarta.variable} ${spaceGrotesk.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col bg-ink text-slate-200">
+        <div className="mesh-bg" aria-hidden="true" />
         {children}
         <Analytics />
       </body>

@@ -4,7 +4,7 @@ import SectionHeading from "./ui/SectionHeading";
 import SpotlightGroup from "./ui/SpotlightGroup";
 
 const cardBase =
-  "spotlight group relative h-full overflow-hidden rounded-3xl border border-white/[0.07] bg-card/80 p-7 sm:p-8 transition-colors duration-300 hover:border-brand-500/30";
+  "spotlight card-hover group relative h-full overflow-hidden rounded-3xl border border-white/[0.07] bg-card/80 p-7 sm:p-8 hover:border-brand-500/30";
 
 function IconBadge({ icon: Icon }: { icon: typeof Tv2 }) {
   return (
